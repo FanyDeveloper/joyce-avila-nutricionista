@@ -224,9 +224,9 @@ function Tratamentos() {
                   src={s.imagem}
                   alt=""
                   loading="lazy"
-                  width={120}
-                  height={150}
-                  className="hidden h-20 w-16 rounded-xl object-cover object-top max-sm:block"
+                  width={800}
+                  height={600}
+                  className="hidden aspect-[4/3] w-full rounded-2xl object-cover object-[50%_18%] max-sm:block"
                 />
                 <h3 className="font-display text-[2.1rem] leading-none text-cacau transition-transform duration-500 ease-[var(--ease-suave)] group-hover:translate-x-3 sm:col-span-6 sm:text-[3.2rem]">
                   {s.nome}
