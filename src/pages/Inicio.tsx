@@ -153,10 +153,10 @@ function QuemSou() {
       <div className="container-site grid gap-14 lg:grid-cols-12">
         <div className="order-2 lg:order-1 lg:col-span-4 lg:pt-24">
           <ImagemRevelada
-            src="/img/joyce-perfil.webp"
-            alt="Joyce Avila de perfil, olhando por cima do ombro, com blusa branca de ombro a ombro"
-            largura={725}
-            altura={1416}
+            src="/img/joyce-perfil-rosto.webp"
+            alt="Joyce Avila olhando por cima do ombro, com brinco dourado e cabelo longo com mechas"
+            largura={593}
+            altura={938}
             parallax={false}
             className="aspect-[4/5] w-full max-w-sm rounded-[var(--radius-suave)]"
             imgClassName="!scale-100 object-[50%_4%]"
