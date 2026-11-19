@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [CONFIRMAR: domínio final — troque https://joyceavila.com.br em todo o projeto] -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://joyceavila.com.br/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://joyceavila.com.br/sobre</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/servicos</loc><priority>0.9</priority></url>
+  <url><loc>https://joyceavila.com.br/servicos/emagrecimento-e-composicao-corporal</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/servicos/saude-hormonal-da-mulher</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/servicos/performance-e-hipertrofia</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/servicos/reeducacao-alimentar</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/agendamento</loc><priority>0.9</priority></url>
+  <url><loc>https://joyceavila.com.br/perguntas-frequentes</loc><priority>0.7</priority></url>
+  <url><loc>https://joyceavila.com.br/contato</loc><priority>0.8</priority></url>
+  <url><loc>https://joyceavila.com.br/politica-de-privacidade</loc><priority>0.3</priority></url>
+</urlset>

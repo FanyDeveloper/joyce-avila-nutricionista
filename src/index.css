@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cacau: #3b241d;
+  --color-cacau-700: #5a3a2f;
+  --color-ouro: #a57c45;
+  --color-ouro-texto: #7e5a2c;
+  --color-ouro-claro: #c9a26b;
+  --color-marfim: #fbf7f3;
+  --color-blush: #f1e3dc;
+  --color-rose: #ddbfb4;
+  --color-linho: #e9dcd3;
+  --color-tinta: #2a1a15;
+  --color-texto: #4b3a33;
+
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Hanken Grotesk', ui-sans-serif, sans-serif;
+
+  --radius-suave: 1.25rem;
+  --ease-suave: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  body {
+    @apply bg-marfim text-texto font-sans;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-cacau;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+  }
+  ::selection {
+    background: var(--color-cacau);
+    color: var(--color-marfim);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-ouro-texto);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  img {
+    filter: saturate(0.92) contrast(1.02); /* tratamento de cor único em todas as fotos */
+  }
+}
+
+/* textura de ruído sutil em todo o site */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.07;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .23 0 0 0 0 .14 0 0 0 0 .11 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-12;
+  }
+  .kicker {
+    @apply font-sans text-[0.78rem] font-medium uppercase tracking-[0.22em] text-ouro-texto;
+  }
+  .titulo-xl {
+    font-size: clamp(2.9rem, 8.4vw, 7.4rem);
+  }
+  .titulo-lg {
+    font-size: clamp(2.4rem, 5.6vw, 4.9rem);
+  }
+  .titulo-md {
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+  }
+  .fio {
+    @apply h-px w-full bg-cacau/15;
+  }
+  .linha-mascara {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+  .texto-corpo {
+    @apply text-[1.0625rem] leading-[1.7] text-texto sm:text-lg;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
